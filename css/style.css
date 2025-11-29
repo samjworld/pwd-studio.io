@@ -1,3 +1,26 @@
+@font-face {
+  font-family: 'Romanica';
+  src: url('assets/fonts/romanica/Romanica-Regular.woff2') format('woff2'),
+       url('assets/fonts/romanica/Romanica-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Romanica';
+  src: url('assets/fonts/romanica/Romanica-Bold.woff2') format('woff2'),
+       url('assets/fonts/romanica/Romanica-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Use Romanica only for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Romanica', serif;
+}
+
 /********** Template CSS **********/
 
 /*** Spinner ***/
@@ -659,7 +682,7 @@ body{background-image: url('../assets/images/bg-texture.png'); background-repeat
 /* ================= Explicit per-class Bootstrap overrides (ChatGPT) ================= */
 
 /* Buttons */
-.btn-primary { background-color: #4f7942 !important; border-color: #4f7942 !important; color:#ffffff !important; }
+.btn-primary { background-color: #415077 !important; border-color: #415077 !important; color:#ffffff !important; }
 .btn-primary:hover { background-color: #4f7942 !important; border-color: #4f7942 !important; }
 
 .btn-secondary { background-color: #6c757d !important; border-color: #6c757d !important; color:#ffffff !important; }
