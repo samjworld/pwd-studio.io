@@ -950,3 +950,56 @@ a:focus, button:focus, .form-control:focus {
         image-rendering: -webkit-optimize-contrast;
     }
 }
+/* ----------------------------------------------------------
+   BUILDER PARTNERS - Dedicated styling (no conflict with brand)
+----------------------------------------------------------- */
+
+.builder-partners-section {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.builder-track {
+    display: flex;
+    width: calc(350px * 10);  /* adjust based on number of logos */
+    animation: scrollBuilders 25s linear infinite;
+}
+
+.builder-logo {
+    flex: 0 0 auto;
+    margin: 0 35px;               /* spacing between pallets */
+    padding: 35px 45px;           /* padding makes the blocks bigger */
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e5e5;
+}
+
+.builder-logo img {
+    height: 130px;                /* increase this value to make larger */
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.builder-logo img:hover {
+    transform: scale(1.1);
+}
+
+/* scroll animation */
+@keyframes scrollBuilders {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-350px * 5)); }
+}
+
+/* responsiveness */
+@media (max-width: 576px) {
+    .builder-logo {
+        padding: 20px 25px;
+        margin: 0 18px;
+    }
+    .builder-logo img {
+        height: 80px;
+    }
+}
