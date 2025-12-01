@@ -695,7 +695,7 @@ body{background-image: url('../assets/images/bg-texture.png'); background-repeat
 
 /* Outline Buttons */
 .btn-outline-primary { color: #4f7942 !important; border-color: #4f7942 !important; background: transparent !important; }
-.btn-outline-secondary { color:#6c757d !important; border-color:#6c757d !important; }
+.btn-outline-secondary { color: !important; border-color:#6c757d !important; }
 
 /* Navbar */
 .navbar { background: transparent !important; font-weight:600 !important; }
