@@ -389,7 +389,7 @@ From world-class hardware and accessories to cutting-edge design materials, Pate
                     <h5 class="text-white mb-4">Get In Touch</h5>
                     <p><i class="fa fa-map-marker-alt me-3"></i>5th Floor, Patel's Landmark, jayaberi enclave, gachibowli</p>
                     <p><i class="fa fa-phone-alt me-3"></i>+91-9666476363</p>
-                    <p><i class="fa fa-envelope me-3"></i>sales@pearlwhitedesigns.in</p>
+                    <p><i class="fa fa-envelope me-3"></i>hello@pearlwhitedesigns.in</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-primary btn-square border-2 me-2" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-primary btn-square border-2 me-2" href=""><i class="fab fa-facebook-f"></i></a>
@@ -479,19 +479,19 @@ From world-class hardware and accessories to cutting-edge design materials, Pate
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
-                <form id="quoteForm">
+                <form action="https://formsubmit.co/hello@pearlwhitedesigns.in" method="POST" onsubmit="handleFormSubmit(event)">
                   <!-- Property type -->
                   <div class="mb-3">
                     <label class="form-label small fw-semibold">Property type</label>
                     <div class="d-flex flex-wrap gap-2">
                       <input type="radio" class="btn-check" name="propertyType" id="ptype1" value="1 BHK" checked>
-                      <label class="btn btn-outline-secondary btn-sm rounded-pill" for="ptype1">1 BHK</label>
+                      <label class="btn btn-outline-secondary btn-sm rounded-pill" for="ptype1">2 BHK</label>
 
                       <input type="radio" class="btn-check" name="propertyType" id="ptype2" value="2 BHK">
-                      <label class="btn btn-outline-secondary btn-sm rounded-pill" for="ptype2">2 BHK</label>
+                      <label class="btn btn-outline-secondary btn-sm rounded-pill" for="ptype2">3 BHK</label>
 
                       <input type="radio" class="btn-check" name="propertyType" id="ptype3" value="3 BHK">
-                      <label class="btn btn-outline-secondary btn-sm rounded-pill" for="ptype3">3 BHK</label>
+                      <label class="btn btn-outline-secondary btn-sm rounded-pill" for="ptype3">4 BHK</label>
 
                       <input type="radio" class="btn-check" name="propertyType" id="ptype4" value="4+ BHK / Duplex">
                       <label class="btn btn-outline-secondary btn-sm rounded-pill" for="ptype4">4+ BHK / Duplex</label>
@@ -542,7 +542,12 @@ From world-class hardware and accessories to cutting-edge design materials, Pate
                   <p class="small text-muted mt-2 mb-0">
                     By submitting this form, you agree to our privacy policy and terms of use.
                   </p>
-                </form>
+                
+<input type="hidden" name="_subject" value="New Interior Consultation Lead – Pearl White Design Studio">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+
+</form>
               </div>
             </div>
           </div>
@@ -561,6 +566,38 @@ From world-class hardware and accessories to cutting-edge design materials, Pate
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+<!-- Thank You Modal -->
+<div class="modal fade" id="thankYouModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
+      <h3 class="mb-3">Thank You!</h3>
+      <p class="mb-4">
+        Your request has been received.<br>
+        Our team will contact you shortly.
+      </p>
+      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+function handleFormSubmit(e) {
+  e.preventDefault();
+
+  const thankYouModal = new bootstrap.Modal(
+    document.getElementById('thankYouModal')
+  );
+  thankYouModal.show();
+
+  setTimeout(() => {
+    e.target.submit();
+  }, 1200);
+}
+</script>
+
 </body>
 
 </html>
